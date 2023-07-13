@@ -1,0 +1,26 @@
+
+1. Trong JSX thì có 2 cú pháp khác so với HTML: 
+  + class(HTML) => className
+  + for (lable - HTML) => htmlFor 
+2. Để biding dữ liệu (in dữ liệu ra trình duyệt) thì chúng ta sẽ sử dụng {...}
+3. Để render dữ liệu dạng danh sách thì sưr dụng map để render
+4. Khi muốn sử dụng dữ liệu từ một file bên ngoài thì cần phải import
+5. Để css inline cho một thẻ thì sử dụng style={{color: "red", padding: 30}}
+
+----- Props_ state
+1. Phạm vị của state: chỉ trong component mà nó được khai báo
+2. Để khai báo được state trong một class component thì ta sử dụng cú pháp: this.state = {'key': 'value'}
+3. Props được sử dụng để truyên dữ liệu từ component cha xuống component con => Phạm vi hoạt động của props là
+từ component cha xuống component con
+Ví dụ: cho 3 component A(ông), B(cha), C(con)
+4. Trong một component, khi state thay đổi thì component được re-render lại
+
+-- Các bước để truyền props
+B1: Tạo props từ component cha (string, number, function,...)
+  + Cú pháp: <Component props_name={value}/>
+B2: Từ component con, chúng ta thử dụng props
+
+-- Các bước đê truyền dữ liệu từ component con lên component cha
+B1: Tại component cha, tạo ra một hàm
+B2: Trong component con, chúng ta thay đổi state thông qua một sự kiện
+B3: Sử dụng lại state
